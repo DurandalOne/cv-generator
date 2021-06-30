@@ -1,19 +1,6 @@
-import React, { useState } from "react";
-
 const EduExp = (props) => {
-  const [allValues, setAllValues] = useState({
-    School: "",
-    Qulification: "",
-    Subject: "",
-    From: "",
-    To: "",
-  });
-
   const changeHandler = (e) => {
-    setAllValues({
-      ...allValues,
-      [e.target.name]: e.target.value,
-    });
+    props.getEduValues(e, props.index);
   };
 
   return (
@@ -49,6 +36,11 @@ const EduExp = (props) => {
           name="To"
           onChange={changeHandler}
         />
+
+        <button onClick={props.onAdd}>Add</button>
+        <button onClick={props.onDelete} id={props.id}>
+          Delete
+        </button>
       </form>
     </div>
   );

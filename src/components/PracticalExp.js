@@ -1,26 +1,7 @@
-import React, { useState } from "react";
-import uniqid from "uniqid";
-
 const PracticalExp = (props) => {
-  const [allValues, setAllValues] = useState({
-    PracticalExp: {
-      Position: "",
-      Company: "",
-      City: "",
-      To: "",
-      From: "",
-      id: uniqid(),
-    },
-  });
-
   const changeHandler = (e) => {
-    setAllValues({
-      ...allValues.PracticalExp,
-      [e.target.name]: e.target.value,
-    });
+    props.getPracticalValues(e, props.index);
   };
-
-  props.getAllValues(allValues);
 
   return (
     <div>
@@ -56,8 +37,10 @@ const PracticalExp = (props) => {
           onChange={changeHandler}
         />
 
-        <button onClick={props.add}>Add</button>
-        <button>Delete</button>
+        <button onClick={props.onAdd}>Add</button>
+        <button onClick={props.onDelete} id={props.id}>
+          Delete
+        </button>
       </form>
     </div>
   );
