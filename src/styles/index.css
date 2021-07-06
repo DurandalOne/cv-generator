@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #8a8a8a;
+  font-size: .9rem;
+  line-height: 1.5;
+  overflow-y: scroll;
+}
+
+.navbar {
+  background: #6289b5;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid black 1px;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  width: 1080px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container h1 {
+  padding: 0 10px;
+  color: #f2f6f7;
+  text-shadow: 1px 1px black;
+}
+
+.navbar .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .container button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #EEE;
+  background: #333;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 10px;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .inputForm {
+  border: black solid 1px;
+  width: 595px;
+  padding: 40px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1em;
+  background: #f2f6f7;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px #676767;
+          box-shadow: 2px 2px #676767;
+}
+
+.container .inputForm hr.solid {
+  border-top: 3px solid #bbb;
+  margin: 1em;
+}
+
+.container .inputForm button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #EEE;
+  background: #333;
+  margin: 10px;
+}
+
+.container .inputForm input {
+  margin: .5em -.5em;
+  padding: 5px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.container .inputForm .practicalClass:not(:last-child) .buttons .addBtn {
+  display: none;
+}
+
+.container .inputForm .eduClass:not(:last-child) .buttons .addBtn {
+  display: none;
+}
+
+.container .cv__view {
+  width: 595px;
+  min-width: 595px;
+  height: 842px;
+  border: black solid 1px;
+  margin: 1em;
+  padding: 50px;
+  background: #f2f6f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .cv__view header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #6289b5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.container .cv__view header .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .cv__view header h1 {
+  text-transform: uppercase;
+  color: #468294;
+  font-weight: 700;
+  font-size: 2.4em;
+  letter-spacing: .06em;
+}
+
+.container .cv__view header h2 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.container .cv__view header .contact-details {
+  padding: .3em 0;
+}
+
+.container .cv__view .experience-list {
+  padding: 20px 0;
+}
+
+.container .cv__view .experience-list .bold {
+  font-weight: 700;
+}
+
+.container .cv__view .experience-list .experience__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+
+.container .cv__view .experience-list h3 {
+  text-transform: uppercase;
+  color: #6289b5;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: -1.5em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -2,47 +2,53 @@ const PracticalExp = (props) => {
   const changeHandler = (e) => {
     props.getPracticalValues(e, props.index);
   };
-
+  const practicalValues = props.practicalValues;
   return (
-    <div>
-      <form>
-        <input
-          type="text"
-          placeholder="Position"
-          name="Position"
-          onChange={changeHandler}
-        />
-        <input
-          type="text"
-          placeholder="Company"
-          name="Company"
-          onChange={changeHandler}
-        />
-        <input
-          type="text"
-          placeholder="City"
-          name="City"
-          onChange={changeHandler}
-        />
-        <input
-          type="text"
-          placeholder="To"
-          name="To"
-          onChange={changeHandler}
-        />
-        <input
-          type="text"
-          placeholder="From"
-          name="From"
-          onChange={changeHandler}
-        />
-
-        <button onClick={props.onAdd}>Add</button>
-        <button onClick={props.onDelete} id={props.id}>
+    <form>
+      <input
+        type="text"
+        placeholder="Position"
+        name="Position"
+        onChange={changeHandler}
+        value={practicalValues.Position}
+      />
+      <input
+        type="text"
+        placeholder="Company"
+        name="Company"
+        onChange={changeHandler}
+        value={practicalValues.Company}
+      />
+      <input
+        type="text"
+        placeholder="From"
+        name="From"
+        onChange={changeHandler}
+        value={practicalValues.From}
+      />
+      <input
+        type="text"
+        placeholder="To"
+        name="To"
+        onChange={changeHandler}
+        value={practicalValues.To}
+      />
+      <input
+        type="text"
+        placeholder="Description"
+        name="Description"
+        onChange={changeHandler}
+        value={practicalValues.Description}
+      />
+      <div className="buttons">
+        <button className="delBtn" onClick={props.onDelete} id={props.id}>
           Delete
         </button>
-      </form>
-    </div>
+        <button className="addBtn" onClick={props.onAdd}>
+          Add
+        </button>
+      </div>
+    </form>
   );
 };
 

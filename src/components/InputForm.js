@@ -1,146 +1,66 @@
-import React, { useState } from "react";
 import GeneralInfo from "./GeneralInfo";
 import PracticalExp from "./PracticalExp";
 import EduExp from "./EduExp";
-import uniqid from "uniqid";
 
-const InputForm = () => {
-  /////////
-  const [allValues, setAllValues] = useState({
-    FirstName: "",
-    LastName: "",
-    Address: "",
-    PhoneNumber: "",
-    Email: "",
-    DoB: "",
-    Describe: "",
-  });
-
-  const changeHandler = (e) => {
-    setAllValues({ ...allValues, [e.target.name]: e.target.value });
-  };
-
-  /////////
-  const [practicalValues, setPracticalValues] = useState([
-    {
-      Position: "",
-      Company: "",
-      City: "",
-      To: "",
-      From: "",
-      id: uniqid(),
-    },
-    {
-      Position: "",
-      Company: "",
-      City: "",
-      To: "",
-      From: "",
-      id: uniqid(),
-    },
-  ]);
-
-  const getPracticalValues = (event, index) => {
-    const values = [...practicalValues];
-    values[index][event.target.name] = event.target.value;
-    setPracticalValues(values);
-  };
-
-  const addNewPracticalExp = (e) => {
-    e.preventDefault();
-    setPracticalValues([
-      ...practicalValues,
-      {
-        Position: "",
-        Company: "",
-        City: "",
-        To: "",
-        From: "",
-        id: uniqid(),
-      },
-    ]);
-  };
-
-  const deletePracticalExp = (e) => {
-    e.preventDefault();
-    const values = [...practicalValues];
-    values.splice(
-      values.findIndex((value) => value.id === e.target.id),
-      1
-    );
-    setPracticalValues(values);
-  };
-
-  /////////
-  const [eduValues, setEduValues] = useState([
-    {
-      School: "",
-      Qulification: "",
-      Subject: "",
-      From: "",
-      To: "",
-      id: uniqid(),
-    },
-  ]);
-
-  const getEduValues = (event, index) => {
-    const values = [...eduValues];
-    values[index][event.target.name] = event.target.value;
-    setEduValues(values);
-  };
-
-  const addNewEduExp = (e) => {
-    e.preventDefault();
-    setEduValues([
-      ...eduValues,
-      {
-        School: "",
-        Qulification: "",
-        Subject: "",
-        From: "",
-        To: "",
-        id: uniqid(),
-      },
-    ]);
-  };
-
-  const deleteEduExp = (e) => {
-    e.preventDefault();
-    const values = [...eduValues];
-    values.splice(
-      values.findIndex((value) => value.id === e.target.id),
-      1
-    );
-    setEduValues(values);
-  };
-
+const InputForm = (props) => {
   return (
-    <div>
-      <div>
-        <GeneralInfo changeHandler={changeHandler} />
+    <div className="inputForm">
+      <div className="generalInfo">
+        <h2>Personal Details</h2>
+        <GeneralInfo
+          changeHandler={props.changeHandler}
+          key={props.allValues.id}
+          allValues={props.allValues}
+        />
       </div>
-      {practicalValues.map((practicalValues, index) => (
-        <div key={practicalValues.id}>
-          <PracticalExp
-            getPracticalValues={getPracticalValues}
-            onAdd={addNewPracticalExp}
-            onDelete={deletePracticalExp}
-            index={index}
-            id={practicalValues.id}
-          />
-        </div>
-      ))}
-      {eduValues.map((eduValues, index) => (
-        <div key={eduValues.id}>
-          <EduExp
-            getEduValues={getEduValues}
-            onAdd={addNewEduExp}
-            onDelete={deleteEduExp}
-            index={index}
-            id={eduValues.id}
-          />
-        </div>
-      ))}
+
+      <hr className="solid"></hr>
+
+      <div className="practicalValues">
+        <h2>Work Experience</h2>
+        {props.practicalValues.length ? (
+          props.practicalValues.map((practicalValues, index) => (
+            <div key={practicalValues.id} className="practicalClass">
+              <PracticalExp
+                getPracticalValues={props.getPracticalValues}
+                onDelete={props.deletePracticalExp}
+                onAdd={props.addNewPracticalExp}
+                index={index}
+                id={practicalValues.id}
+                practicalValues={practicalValues}
+              />
+            </div>
+          ))
+        ) : (
+          <button className="addBtn" onClick={props.addNewPracticalExp}>
+            Add
+          </button>
+        )}
+      </div>
+
+      <hr className="solid"></hr>
+
+      <div className="eduValues">
+        <h2>Education</h2>
+        {props.eduValues.length ? (
+          props.eduValues.map((eduValues, index) => (
+            <div key={eduValues.id} className="eduClass">
+              <EduExp
+                getEduValues={props.getEduValues}
+                onDelete={props.deleteEduExp}
+                onAdd={props.addNewEduExp}
+                index={index}
+                id={eduValues.id}
+                eduValues={eduValues}
+              />
+            </div>
+          ))
+        ) : (
+          <button className="addBtn" onClick={props.addNewEduExp}>
+            Add
+          </button>
+        )}
+      </div>
     </div>
   );
 };
