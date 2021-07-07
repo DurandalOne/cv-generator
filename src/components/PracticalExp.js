@@ -33,7 +33,8 @@ const PracticalExp = (props) => {
         onChange={changeHandler}
         value={practicalValues.To}
       />
-      <input
+      <textarea
+        rows={3}
         type="text"
         placeholder="Description"
         name="Description"

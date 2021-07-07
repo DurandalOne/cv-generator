@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
+import "./styles/index.css";
 import InputForm from "./components/InputForm";
 import CV from "./components/CV";
 import NavBar from "./components/NavBar";

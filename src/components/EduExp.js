@@ -35,8 +35,9 @@ const EduExp = (props) => {
         onChange={changeHandler}
         value={eduValues.To}
       />
-      <input
+      <textarea
         type="text"
+        rows={3}
         placeholder="Details"
         name="Details"
         onChange={changeHandler}

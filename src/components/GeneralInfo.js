@@ -48,9 +48,8 @@ const GeneralInfo = (props) => {
           onChange={props.changeHandler}
           value={allValues.Email}
         />
-        <input
-          type="textarea"
-          cols={3}
+        <textarea
+          rows={3}
           placeholder="Description"
           name="Description"
           onChange={props.changeHandler}
