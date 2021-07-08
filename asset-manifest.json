@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/DurandalOne/cv-generator/static/css/main.c87e8863.chunk.css",
-    "main.js": "/DurandalOne/cv-generator/static/js/main.eebc5220.chunk.js",
-    "main.js.map": "/DurandalOne/cv-generator/static/js/main.eebc5220.chunk.js.map",
-    "runtime-main.js": "/DurandalOne/cv-generator/static/js/runtime-main.8fe92c18.js",
-    "runtime-main.js.map": "/DurandalOne/cv-generator/static/js/runtime-main.8fe92c18.js.map",
-    "static/js/2.853fa138.chunk.js": "/DurandalOne/cv-generator/static/js/2.853fa138.chunk.js",
-    "static/js/2.853fa138.chunk.js.map": "/DurandalOne/cv-generator/static/js/2.853fa138.chunk.js.map",
-    "index.html": "/DurandalOne/cv-generator/index.html",
-    "static/css/main.c87e8863.chunk.css.map": "/DurandalOne/cv-generator/static/css/main.c87e8863.chunk.css.map",
-    "static/js/2.853fa138.chunk.js.LICENSE.txt": "/DurandalOne/cv-generator/static/js/2.853fa138.chunk.js.LICENSE.txt"
+    "main.css": "/cv-generator/static/css/main.c87e8863.chunk.css",
+    "main.js": "/cv-generator/static/js/main.eebc5220.chunk.js",
+    "main.js.map": "/cv-generator/static/js/main.eebc5220.chunk.js.map",
+    "runtime-main.js": "/cv-generator/static/js/runtime-main.1fcf9cc5.js",
+    "runtime-main.js.map": "/cv-generator/static/js/runtime-main.1fcf9cc5.js.map",
+    "static/js/2.853fa138.chunk.js": "/cv-generator/static/js/2.853fa138.chunk.js",
+    "static/js/2.853fa138.chunk.js.map": "/cv-generator/static/js/2.853fa138.chunk.js.map",
+    "index.html": "/cv-generator/index.html",
+    "static/css/main.c87e8863.chunk.css.map": "/cv-generator/static/css/main.c87e8863.chunk.css.map",
+    "static/js/2.853fa138.chunk.js.LICENSE.txt": "/cv-generator/static/js/2.853fa138.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8fe92c18.js",
+    "static/js/runtime-main.1fcf9cc5.js",
     "static/js/2.853fa138.chunk.js",
     "static/css/main.c87e8863.chunk.css",
     "static/js/main.eebc5220.chunk.js"
