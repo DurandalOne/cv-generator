@@ -29,7 +29,7 @@ From your command line, first clone this repo:
 $ git clone https://github.com/DurandalOne/cv-generator
 
 # Go into the repository
-$ cd cv-app
+$ cd cv-generator
 
 # Remove current origin repository
 $ git remote remove origin
