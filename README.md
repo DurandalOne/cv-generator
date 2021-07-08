@@ -1,4 +1,4 @@
-# React/react-to-print API 
+# CV Generator
 
 A web application which generates and prints a CV using user entered data. Features controlled forms and Hooks. Prints out a copy of the user's entered information with minimal styling. There's lots of solutions out there that allow for extensive styling options, the idea is to create a clean CV quickly and with little fuss.
 
