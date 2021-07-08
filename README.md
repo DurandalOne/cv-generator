@@ -1,23 +1,51 @@
-# Getting Started with Create React App
+# React/react-to-print API 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application which generates and prints a CV using user entered data. Features controlled forms and Hooks. Prints out a copy of the user's entered information with minimal styling. There's lots of solutions out there that allow for extensive styling options, the idea is to create a clean CV quickly and with little fuss.
 
-## Available Scripts
+## Lessons Learned
 
-In the project directory, you can run:
+My first real React project after putting the mandatory to do list together. Started off using scattered pieces of state in class based components, I had an idea of what I wanted to achieve but not exacly how I wanted to achieve it. Decided to go away and spend a few days really learning hooks and state. After getting to grips with how it all works I really came to apreaciate how much cleaner state management solutions are. 
 
-### `npm start`
+Learnt how to print a specific div using the react-to-print API. Had a look at other solutions, such as using javascript fuctions that print a specific part of the DOM, but found react-to-print and much easier solution.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Actually got a really good grasp of array methods from using this project (like map, filter, reduce) - one of the main reasons I like working with React is because it does make you a better JavaScript developer overall.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Potential Future Features
 
-### `npm test`
+- Add a colour picker so that the user can customise the form a bit further. As the aim was to create a minimalist form, there would only be a small selection of styling choices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Make the page more mobile friendly. Though the page is responsive, the CV section doesn't display well below tablet size.
+
+## Deployment
+
+Deployed with [github pages](https://pages.github.com/).
+
+## Get started
+
+From your command line, first clone this repo:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/DurandalOne/cv-generator
+
+# Go into the repository
+$ cd cv-app
+
+# Remove current origin repository
+$ git remote remove origin
+```
+Then you can install the dependencies using NPM:
+
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm start
+```
+You should now have a development server running in your default browser.
 
 ### `npm run build`
 
@@ -28,44 +56,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# cv-generator

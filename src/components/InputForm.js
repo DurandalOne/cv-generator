@@ -16,6 +16,9 @@ const InputForm = (props) => {
 
       <hr className="solid"></hr>
 
+      {/* PracticalValues and eduValues loop though all the current objects using a map function
+           assigning the current id value as the key React needs  */}
+
       <div className="practicalValues">
         <h2>Work Experience</h2>
         {props.practicalValues.length ? (

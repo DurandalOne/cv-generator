@@ -14,8 +14,10 @@ import {
   blankEducationDetails,
 } from "./components/DefaultValues";
 
+//The uniqid API is imported to handle the generation of unique IDs for each object generated
+
 const App = () => {
-  //Personal Details hook
+  //Personal Details hook. Pulls initial blank state from DefaultValues.js
   const [allValues, setAllValues] = useState({
     ...blankPersonalDetails,
     id: uniqid(),
@@ -25,7 +27,7 @@ const App = () => {
     setAllValues({ ...allValues, [e.target.name]: e.target.value });
   };
 
-  //Work Experience hook
+  //Work Experience hook. Pulls initial blank state from DefaultValues.js
 
   const [practicalValues, setPracticalValues] = useState([
     { ...blankWorkDetails, id: uniqid() },
@@ -56,7 +58,7 @@ const App = () => {
     setPracticalValues(values);
   };
 
-  //Education hook
+  //Education hook. Pulls initial blank state from DefaultValues.js
 
   const [eduValues, setEduValues] = useState([
     { ...blankEducationDetails, id: uniqid() },
@@ -83,7 +85,7 @@ const App = () => {
     setEduValues(values);
   };
 
-  //
+  //Pulls pre-entered values from DefaultValues.js on the "Demo Values" button click
 
   const enterDefaults = () => {
     setAllValues(defaultPersonalDetails);
@@ -91,6 +93,7 @@ const App = () => {
     setEduValues(defaultEducationDetails);
   };
 
+  //Clears alls current values and reinitialise the inital state of blank forms
   const clearForm = () => {
     setAllValues({
       ...blankPersonalDetails,
@@ -103,6 +106,7 @@ const App = () => {
     setEduValues([{ ...blankEducationDetails, id: uniqid() }]);
   };
 
+  // react-to-print handler. Sets the current values in the CV component as the current ref
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
     copyStyles: true,
