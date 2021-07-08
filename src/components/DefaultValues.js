@@ -45,17 +45,17 @@ const defaultWorkDetails = [
   {
     Position: "Software Engineer",
     Company: "A Software Company",
-    From: "2018",
+    From: "2015",
     To: "Present",
     Description:
       "Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.",
     id: uniqid(),
   },
   {
-    Position: "Tutor",
-    Company: "A Prestigious University",
+    Position: "Barista",
+    Company: "Starbucks",
     From: "2015",
-    To: "2017",
+    To: "2011",
     Description: "Enim elit aliquip fugiat anim proident.",
     id: uniqid(),
   },
@@ -64,7 +64,7 @@ const defaultWorkDetails = [
 const defaultEducationDetails = [
   {
     School: "Harvard University",
-    Subject: "CS50: Introduction to Computer Science",
+    Subject: "CS50: Web Programming with Python and JavaScript",
     From: "2020",
     To: "Present",
     Details:
@@ -72,9 +72,9 @@ const defaultEducationDetails = [
     id: uniqid(),
   },
   {
-    School: "The Odin Project",
-    Subject: "Fullstack Javascript",
-    From: "2019",
+    School: "Open University",
+    Subject: "Computer Science (BSc)",
+    From: "2017",
     To: "Present",
     Details:
       "Nam non enim turpis. Aenean vitae diam hendrerit, mattis nisl sit amet, tincidunt lectus. Phasellus massa lorem, finibus ut risus quis, vehicula ultrices dui. Aliquam rutrum nibh ligula, pharetra tempus turpis gravida a. Praesent neque leo, iaculis vel enim eu, pretium finibus diam. Nunc sit amet sapien nec nisi feugiat aliquam in vitae dolor.",
